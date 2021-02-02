@@ -9,19 +9,19 @@ import profileImg from '../../images/profile.png'
 export function Footer() {
 	return (
 		<View style={styles.footer}>
-			<TouchableOpacity style={styles.homeBtn} onPress={() => {}}>
+			<TouchableOpacity onPress={() => {}}>
 				<Image source={homeImg}/>
 			</TouchableOpacity>
-			<TouchableOpacity style={styles.listBtn} onPress={() => {}}>
+			<TouchableOpacity onPress={() => {}}>
 				<Image source={listImg}/>
 			</TouchableOpacity>
-			<TouchableOpacity style={styles.messageBtn} onPress={() => {}}>
+			<TouchableOpacity onPress={() => {}}>
 				<Image source={messageImg}/>
 			</TouchableOpacity>
-			<TouchableOpacity style={styles.basketBtn} onPress={() => {}}>
+			<TouchableOpacity onPress={() => {}}>
 				<Image source={basketImg}/>
 			</TouchableOpacity>
-			<TouchableOpacity style={styles.profileBtn} onPress={() => {}}>
+			<TouchableOpacity onPress={() => {}}>
 				<Image source={profileImg}/>
 			</TouchableOpacity>
 		</View>
@@ -44,9 +44,4 @@ const styles = StyleSheet.create({
 		borderTopWidth: 1,
 		borderTopColor: '#393939',
 	},
-	homeBtn:{},
-	listBtn:{},
-	messageBtn:{},
-	basketBtn:{},
-	profileBtn:{},
 });

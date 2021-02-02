@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 	title: {
 		marginTop: 10,
 		color: '#393939',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 16,
 		fontWeight: '400',
 		textAlign: 'left',
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 	},
 	priceText: {
 		color: '#393939',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 20,
 		fontWeight: '700',
 		textAlign: 'left',
@@ -78,14 +78,14 @@ const styles = StyleSheet.create({
 	},
 	supInfoText: {
 		color: '#89888d',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 12,
 		fontWeight: '400',
 		textAlign: 'left',
 	},
 	supInfoCountText: {
 		color: '#393939',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 12,
 		fontWeight: '700',
 		textAlign: 'left',
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
 	code: {
 		paddingVertical: 13,
 		color: '#89888d',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 12,
 		fontWeight: '400',
 		textAlign: 'left',

@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		color: '#ffffff',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 16,
 		fontWeight: '400',
 	}

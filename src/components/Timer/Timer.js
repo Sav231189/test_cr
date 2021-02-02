@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 	},
 	timeTitle: {
 		color: '#ffffff',
-		fontFamily: 'SF-UI-Text-Semibold',
+		// fontFamily: 'SF-UI-Text-Semibold',
 		fontSize: 10,
 	},
 	time: {
