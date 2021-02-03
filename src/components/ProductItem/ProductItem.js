@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
 	},
 	main: {
 		width: '100%',
-		paddingHorizontal: 24,
+		paddingHorizontal: 20,
 		borderTopWidth: 1,
 		borderTopColor: '#393939',
 	},
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
 	},
 	price: {
 		textAlign: 'left',
-		width: 310,
+		width: 290,
 	},
 	priceText: {
 		color: '#393939',
@@ -80,7 +80,9 @@ const styles = StyleSheet.create({
 		fontWeight: '700',
 		textAlign: 'left',
 	},
-	basketBtn: {},
+	basketBtn: {
+		marginRight: 20,
+	},
 	supInfo: {
 		marginTop: 20,
 		flexDirection: 'row',

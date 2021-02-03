@@ -19,9 +19,9 @@ export function ProductSlider(props) {
 	const leftArrow = useRef(null);
 
 	const leftArrowClick = () => {
-		leftArrow.current.scrollTo({x: x-85, y: 0, animated: true,});};
+		leftArrow.current.scrollTo({x: x-82, y: 0, animated: true,});};
 	const rightArrowClick = () => {
-		leftArrow.current.scrollTo({x: x+85, y: 0, animated: true,});};
+		leftArrow.current.scrollTo({x: x+82, y: 0, animated: true,});};
 
 
 	return (
@@ -31,7 +31,7 @@ export function ProductSlider(props) {
 					width={12}
 					height={74}
 					xmlns="http://www.w3.org/2000/svg"
-					viewBox="-1 -3 10 70"
+					viewBox="-1 -4 10 70"
 					{...props}
 				>
 					<Defs>
@@ -101,15 +101,15 @@ const styles = StyleSheet.create({
 	arrowsLeft: {
 		paddingRight: 5,
 		paddingLeft: 15,
-		marginLeft: -10,
+		marginLeft: -20,
 	},
 	sliderItem: {
-		minWidth: 75,
+		width: 76,
 		paddingHorizontal: 18,
 		justifyContent: 'center',
 		alignItems: 'center',
 		borderWidth: 1,
 		borderColor: '#e6e6e6',
-		marginHorizontal: 5,
+		marginHorizontal: 3,
 	},
 });

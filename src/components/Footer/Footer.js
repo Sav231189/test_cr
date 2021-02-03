@@ -7,7 +7,7 @@ export function Footer(props) {
 
 	return (
 		<View style={styles.footer}>
-			<TouchableOpacity onPress={() => RootNavigation.navigate('Home')} >
+			<TouchableOpacity style={styles.itemBtn} onPress={() => RootNavigation.navigate('Home')} >
 				<Svg
 					width={26}
 					height={30}
@@ -22,7 +22,7 @@ export function Footer(props) {
 					/>
 				</Svg>
 			</TouchableOpacity>
-			<TouchableOpacity  onPress={() => RootNavigation.navigate('Main')} >
+			<TouchableOpacity style={styles.itemBtn} onPress={() => RootNavigation.navigate('Main')} >
 				<Svg
 					width={22}
 					height={30}
@@ -37,7 +37,7 @@ export function Footer(props) {
 					/>
 				</Svg>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => RootNavigation.navigate('Message')} >
+			<TouchableOpacity style={styles.itemBtn} onPress={() => RootNavigation.navigate('Message')} >
 				<Svg
 					width={32}
 					height={29}
@@ -52,7 +52,7 @@ export function Footer(props) {
 					/>
 				</Svg>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => RootNavigation.navigate('Basket')} >
+			<TouchableOpacity style={styles.itemBtn} onPress={() => RootNavigation.navigate('Basket')} >
 				<Svg
 					width={33}
 					height={29}
@@ -67,7 +67,7 @@ export function Footer(props) {
 					/>
 				</Svg>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => RootNavigation.navigate('Profile')} >
+			<TouchableOpacity style={styles.itemBtn} onPress={() => RootNavigation.navigate('Profile')} >
 				<Svg
 					width={30}
 					height={31}
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
 	footer: {
 		height: 72,
 		width: '100%',
-		paddingHorizontal: 30,
+		paddingHorizontal: 20,
 		position: 'absolute',
 		bottom: 0,
 		left: 0,
@@ -101,5 +101,9 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		borderTopWidth: 1,
 		borderTopColor: '#393939',
+	},
+	itemBtn: {
+		position: "relative",
+		bottom: 5,
 	},
 });

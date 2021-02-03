@@ -41,10 +41,12 @@ const styles = StyleSheet.create({
 	},
 	backBtn: {
 		position: "absolute",
-		left: 20,
-		top: 40,
-		width: 18,
-		height: 18,
+		left: 5,
+		top: 25,
+		width: 48,
+		height: 48,
+		justifyContent: 'center',
+		alignItems: 'center'
 	},
 	backImg: {
 		width: '100%',
