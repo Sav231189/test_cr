@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
 	},
 	price: {
 		textAlign: 'left',
-		maxWidth: '80%',
+		width: 310,
 	},
 	priceText: {
 		color: '#393939',

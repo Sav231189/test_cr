@@ -15,7 +15,7 @@ import {navigationRef} from './RootNavigation';
 export default function App() {
 	return (
 		<NavigationContainer ref={navigationRef}>
-			<StatusBar/>
+			<StatusBar backgroundColor={'#ff3200'}/>
 			<Header title='Получатель'/>
 			<Stack.Navigator>
 				<Stack.Screen
@@ -50,4 +50,5 @@ export default function App() {
 	);
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+});

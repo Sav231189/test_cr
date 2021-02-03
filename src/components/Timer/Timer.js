@@ -21,7 +21,7 @@ export function Timer(props) {
 			<Image style={styles.timeImg} source={timeImg}/>
 			<View>
 				<Text style={styles.timeTitle}>ОСТАЛОСЬ</Text>
-				<Text style={styles.time}>{days} ДНЯ : {hours} ЧАСОВ : {minutes} МИНУТ : {seconds}  </Text>
+				<Text style={styles.time}>{days} ДНЯ : {hours} ЧАСОВ : {minutes} МИНУТ : {seconds}: СЕКУНД  </Text>
 			</View>
 		</View>
 	);
