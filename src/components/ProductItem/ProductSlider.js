@@ -1,5 +1,5 @@
-import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from "react-native";
+import React,{useRef,useState} from 'react';
+import {ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 
 export function ProductSlider() {
 	let arr = [
@@ -11,10 +11,22 @@ export function ProductSlider() {
 		{price: '200', number: 'more'},
 		{price: '200', number: 'more'},
 	];
+
+	const [x,setX] = useState(0);
+	const leftArrow = useRef(null);
+
+	const leftArrowClick = () => {
+		leftArrow.current.scrollTo({x: x-85, y: 0, animated: true,});};
+	const rightArrowClick = () => {
+		leftArrow.current.scrollTo({x: x+85, y: 0, animated: true,});};
+
+
 	return (
 		<View style={styles.ProductSlider}>
-			<View style={styles.leftArrow}/>
-			<ScrollView style={styles.slider} horizontal={true} disableIntervalMomentum={true}>
+			<TouchableOpacity onPress={leftArrowClick}>
+				<View style={styles.leftArrow}  />
+			</TouchableOpacity>
+			<ScrollView onMomentumScrollEnd={(e)=>setX(e.nativeEvent.contentOffset.x)} ref={leftArrow} style={styles.slider} snapToInterval={85} horizontal={true} disableIntervalMomentum={true}>
 				{arr.map((el,index) => {
 					return <View key={index} style={styles.sliderItem}>
 						<Text >{el.price}</Text>
@@ -22,7 +34,9 @@ export function ProductSlider() {
 					</View>
 				})}
 			</ScrollView>
-			<View style={styles.rightArrow}/>
+			<TouchableOpacity onPress={rightArrowClick}>
+				<View style={styles.rightArrow}/>
+			</TouchableOpacity>
 		</View>
 	);
 }

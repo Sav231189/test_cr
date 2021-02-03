@@ -9,7 +9,7 @@ export function Timer(props) {
 	let days = remainingTime > 0 ? parseInt(remainingTime / 86400) : 0;
 	let hours = remainingTime > 0 ? parseInt(remainingTime % 86400 / 3600) : 0;
 	let minutes = remainingTime > 0 ? parseInt(remainingTime % 86400 % 3600 / 60) : 0;
-	// let seconds = remainingTime > 0 ? parseInt(remainingTime % 86400 % 3600 % 60) : 0;
+	let seconds = remainingTime > 0 ? parseInt(remainingTime % 86400 % 3600 % 60) : 0;
 
 	useEffect(() => {
 		let timer = setInterval(() => setRemainingTime(prev => prev - 1), 1000);
@@ -21,7 +21,7 @@ export function Timer(props) {
 			<Image style={styles.timeImg} source={timeImg}/>
 			<View>
 				<Text style={styles.timeTitle}>ОСТАЛОСЬ</Text>
-				<Text style={styles.time}>{days} ДНЯ : {hours} ЧАСОВ : {minutes} МИНУТ </Text>
+				<Text style={styles.time}>{days} ДНЯ : {hours} ЧАСОВ : {minutes} МИНУТ : {seconds}  </Text>
 			</View>
 		</View>
 	);

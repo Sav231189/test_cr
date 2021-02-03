@@ -4,6 +4,7 @@ import {Timer} from "../Timer/Timer";
 import {ProductItem} from "../ProductItem/ProductItem";
 
 export function Main(props) {
+
 	return (
 		<View style={styles.Main}>
 			<Timer dataEnd={'02/05/2021 00:00:00 AM'}/>
@@ -20,7 +21,7 @@ export function Main(props) {
 const styles = StyleSheet.create({
 	Main: {
 		flex: 1,
-		marginVertical: 72,
+		marginBottom: 72,
 	},
 	content: {
 		width: '100%',
